@@ -37,9 +37,9 @@ Root Token:  ...
 Now we can port-forward Service and access vault with our token  
 minikube kubectl -- port-forward service/vault 8200:8200  
 
-![Result](https://github.com/Artemon28/2023_2024-introduction_to_distributed_technologies-K4113c-Chaykov_A_A/tree/main/lab1/vaultsignedin.png)
+![Result](vaultsigned.png)
 
 What we did?  
 We created pod with image of vault and internal port of 8000. Then we created Service with type NodePort. A NodePort service makes the service accessible on a static port on each node in the cluster. It opens a specific port (in this case, 8200) on all nodes, and any traffic sent to this port is forwarded to the service.  
 
-![VaultScheme](https://drive.google.com/file/d/1xiMvVqdGT2T16faVMo0vMzQJIadurLtx/view?usp=sharing)
+![VaultScheme](vaultpod.drawio.png)
