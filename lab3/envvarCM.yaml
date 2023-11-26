@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: react-vars-cm
+data:
+  REACT_APP_USERNAME: Artemon28
+  REACT_APP_COMPANY_NAME: itmo uni
